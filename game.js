@@ -11,6 +11,7 @@ $(".start-btn").click(function(){
         level++;
         nextSequence(level);
         clickCount++;
+        $(".start-btn").fadeOut();
     }    
 
 });
@@ -92,6 +93,7 @@ function startOver()
     level = 0;
     gamePattern = [];
     userClickedPattern = [];
+    $(".start-btn").fadeIn();
 }
 
 
