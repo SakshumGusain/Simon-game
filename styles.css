@@ -5,15 +5,15 @@ body {
 }
 
 #logo{
-  font-size: 3rem;
-  margin: 3% auto 5% auto;
+  font-size: 2.5rem;
+  margin: 2% auto 5% auto;
 }
 
 #level-title {
   text-align: center;
   width: 80%;
-  font-size: 2.5rem;
-  margin: 5% auto 5% auto;
+  font-size: 2rem;
+  margin: 5% auto 2% auto;
   color: #FEF2BF;
 }
 
@@ -27,17 +27,16 @@ body {
   margin: 1rem 1rem 1rem 1rem;
   padding: 2%;
   display: inline-block;
-  height: 12rem;
-  width: 12rem;
+  height: 8rem;
+  width: 8rem;
   border: 10px solid black;
   border-radius: 15%;
 }
 
 .start-btn{
-  font-size: 2.5rem;
-  margin: 5% auto 15% auto;
-  width: 40%;
-  height: 5em;
+  margin: 3% auto 5% auto;
+  width: 20%;
+  height: 3.5em;
 }
 
 .game-over {
@@ -52,7 +51,7 @@ body {
 }
 
 footer{
-  margin: 4% 1% 1% 1%;
+  margin: 1% 1% 1% 1%;
   padding: 1%;
 }
 
@@ -83,4 +82,37 @@ footer{
 .pressed {
   box-shadow: 0 0 20px white;
   background-color: rgb(56, 51, 51);
+}
+
+.score{
+  text-align: center;
+  width: 80%;
+  font-size: 1.5rem;
+  margin: 1% auto 1% auto;
+  color: #FEF2BF;
+}
+
+
+@media(max-width: 992px){
+
+  #logo{
+    font-size: 3rem;
+  }
+  
+  #level-title {
+    font-size: 2.5rem;
+  }
+
+  .btnn {
+    height: 12rem;
+    width: 12rem;
+  }
+
+  .start-btn{
+    font-size: 2.5rem;
+    margin: 5% auto 15% auto;
+    width: 40%;
+    height: 5em;
+  }
+
 }

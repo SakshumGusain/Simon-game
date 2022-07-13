@@ -8,6 +8,7 @@ $(".start-btn").click(function(){
 
     if(clickCount === 0)
     {
+        $("h3").remove();
         level++;
         nextSequence(level);
         clickCount++;
@@ -80,9 +81,17 @@ function checkAnswer(curretLevel)
 function gameOver()
 {
     $("h2").text("Game over! Press Start to continue");
+    showScore();
     $("body").addClass("game-over");
     setTimeout(function(){ $("body").removeClass("game-over");} , 150);
     startOver();
+}
+
+function showScore()
+{
+    $("h2").after("<h3>Your score is </h3>");
+    $("h3").append(level-1);
+    $("h3").addClass("score");
 }
 
 function startOver()
